@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+a {
+   color: black;
+   text-decoration: none;
+}
+
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background: #ededed;
+   height: 4.6875rem;
+   padding: 1rem;
+}
+
+.menu{
+   list-style: none;
+   display: flex;
+   gap: 0.5rem;
+}
+
+.menu a{
+   display: block;
+   padding: 1rem;
+   border-radius: 0.5rem;
+}
+
+.menu a:hover{
+   background: #dedede;
+}
+
+.label-menu, .checkbox{
+   display: none;
+}
+
+.whatsapp-link{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+ .fa-whatsapp{
+    margin-top: 16px;
+}
+
+ *{
+   font-family: 'inter', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.email{
+   min-height: 100vh;
+   display: grid;
+   place-items: center;
+   padding: 1rem;
+}
+
+.mapa{
+   min-height: 100vh;
+   display: grid;
+   place-items: center;
+   text-align: center;
+   padding: 1rem;
+}
+
+.titulo-divs {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+}
+
+.titulo-divs h4{
+   font-weight: bold;
+   text-decoration:underline;
+}
+
+.conteudo-divs{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.conteudo-divs p{
+   font-size: 17px;
+   color:#717171;
+   line-height: 2;
+   text-align: justify;
+}
+
+.desc-maquina{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.desc-maquina p{
+   font-size: 20px;
+   color:#717171;
+   text-align: center;
+}
+
+.icones {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   padding: 1rem;
+   font-size: 40px;
+}
+
+.footer-link{
+   text-decoration: none;
+}
+
+#div_contato{
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+}
+
+#footer_content{
+   width: 100%;
+   color: white;
+   background-color: #171717;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1{
+   margin-bottom: 0.75rem;
+}
+
+#footer_social_media{
+   display: flex;
+   gap: 2rem;
+   margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link{
+   display: flex;
+   justify-content: center;
+   height: 2.5rem;
+   width: 2.5rem;
+   color: white;
+   border-radius: 50%;
+   transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+   font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover{
+   opacity: 0.8;
+}
+
+#instagram{
+   background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+   align-items: center;
+}
+
+#facebook{
+   background-color: #4267b3;
+   align-items: center;
+}
+
+#whatsapp{
+   background-color: #25d366;
+}
+
+.footer-list{
+   display: flex;
+   flex-direction: column;
+   list-style: none;
+}
+
+form{
+   width: 100%;
+   max-width: 30rem;
+}
+
+label, input, textarea, button{
+   display: block;
+}
+
+input, textarea, button{
+   width: 100%;
+   font: inherit;
+   padding: 0.5rem;
+   font-weight: 700;
+}
+
+input, textarea{
+   margin-bottom: 1rem;
+   background: #ededed;
+   border: 0.125rem solid transparent;
+   border-radius: 1.125rem;
+   transition: border-color 0.3s;
+   box-shadow: 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+   outline: none;
+   border-color: #6b6b6b;
+   box-shadow: 0 0 0 0.2125rem #dededede;
+}
+
+label{
+   margin-bottom: 0.5rem;
+}
+
+textarea{
+   min-height: 12.5rem;
+   resize: vertical;
+}
+
+button{
+   border: none;
+   border-radius: 99px;
+   color: white;
+   background: #1d90f5;
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+button:hover,
+button:focus{
+   outline: none;
+   background: #1c70d3;
+}
+
+button:disabled{
+   cursor: not-allowed;
+   background: #555b69;
+}
+
+.success,
+.error{
+   text-align: center;
+}
+
+.success{
+   color: green;
+}
+
+.error{
+   color: tomato;
+}
+
+.container{
+   max-width: 75rem;
+   width: 95%;
+}
+
+.slider-wrapper{
+   position: relative;
+}
+
+.slider-wrapper .slide-button{
+   position: absolute;
+   top: 50%;
+   height: 2rem;
+   width: 2rem;
+   color: #fff;
+   border: none;
+   outline: none;
+   background: #000;
+   font-size: 1.3rem;
+   cursor: pointer;
+   border-radius: 50%;
+   transform: translateY(-50%);
+}
+
+.slider-wrapper .slide-button:hover{
+   background: #444;
+}
+
+.slider-wrapper .slide-button#prev-slide{
+   left: -1.25rem;
+}
+
+.slider-wrapper .slide-button#next-slide{
+   right: -1.25rem;
+}
+
+.slider-wrapper .image-list{
+   display: grid;
+   gap: 1.125rem;
+   font-size: 0;
+   margin-bottom: 1.25rem;
+   overflow-x: auto;
+   scrollbar-width: none;
+   grid-template-columns: repeat(13, 1fr);
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar{
+   display: none;
+}
+
+.slider-wrapper .image-list .image-item{
+   width: 320px;
+   height: 200px;
+   object-fit: cover;
+}
+
+.container .slider-scrollbar{
+   height: 1.5rem;
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track{
+   height: 0.125rem;
+   width: 100%;
+   background: #ccc;
+   position: relative;
+   border-radius: 0.25rem;
+}
+
+.slider-scrollbar:hover .scrollbar-track{
+   height: 0.25rem;
+}
+
+.slider-scrollbar .scrollbar-thumb{
+   position: absolute;
+   height: 100%;
+   width: 50%;
+   background: #000;
+   border-radius: inherit;
+   cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb:active{
+   cursor: grabbing;
+   height: 0.5rem;
+   top: -0.125rem;
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: -0.625;
+   bottom: -0.625;
+}
+
+/* Banner */
+.banner{
+   width: 100%;
+   height: 31.25rem;
+   background: url('banner/banner_desktop.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   text-align: center;
+}
+
+.botao-banner{
+   width: 12rem;
+   text-align: center;
+   padding: 0.7rem 0.7rem;
+   background-color: #f5f4f4;
+   cursor: pointer;
+   display: inline-block;
+   margin-top: 25rem;
+   transition-duration: 0.4s;
+   color: black;
+   font-weight: bold;
+   border-radius: 1.25rem;
+}
+
+.btn:hover{
+   background-color: #ccc;
+   border-color: black;
+}
+
+@media (max-width: 850px){
+   #div_contato{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+   }
+
+   .menu{
+      display: block;
+      position: absolute;
+      top: 4.6875rem;
+      left: 0;
+      background: #ededed;
+      text-align: center;
+      width: 100%;
+      height: 0rem;
+      z-index: 1;
+      transition: 0.5s;
+      visibility: hidden;
+      overflow: hidden;
+   }
+
+   .menu a{
+      padding: 1rem 0;
+      margin-inline: 1rem;
+      border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+      border-radius: 0;
+   }
+
+   .label-menu{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding-block: 1rem;
+      cursor: pointer;
+   }
+
+   .hamburger{
+      border-top: 0.125rem solid;
+      width: 1.25rem;
+   }
+
+   .hamburger::before,
+   .hamburger::after{
+      content: " ";
+      display: block;
+      width: 1.25rem;
+      height: 0.125rem;
+      background: currentColor;
+      margin-top: 0.3125rem;
+      position: relative;
+      transition: 0.3s;
+   }
+
+   .checkbox:checked ~ .menu{
+      height: 18rem;
+      visibility: visible;
+      overflow-y: auto;
+   }
+
+   .checkbox:checked ~ .label-menu .hamburger{
+      border-top-color: transparent;
+   }
+
+   .checkbox:checked ~ .label-menu .hamburger::before{
+      transform: rotate(135deg);
+   }
+
+   .checkbox:checked ~ .label-menu .hamburger::after{
+      transform: rotate(-135deg);
+      top: -0.4375rem;
+   }
+
+   .slider-wrapper .slide-button {
+      display: none!important;
+   }
+
+   .slider-wrapper .image-list {
+      gap: 0.625rem;
+      margin-bottom: 0.938rem;
+   }
+
+   .slider-scrollbar .scrollbar-thumb{
+      width: 20%;
+   }
+
+   .banner{
+      width: 100%;
+      height: 31,25rem;
+      background: url('banner/banner_celular.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+   }
+}
